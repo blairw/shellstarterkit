@@ -26,3 +26,5 @@
 ## Windows (via WSL)
 
 TODO: Windows instructions.
+
+https://docs.microsoft.com/en-us/windows/python/web-frameworks
