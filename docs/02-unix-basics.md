@@ -1,13 +1,13 @@
-# UNIX-Based Command Line Basics
+# UNIX-based Command Line Basics
 
 ## Navigation
 
-- [Terminal and package manager setup](01-terminal-setup.md)
-- **UNIX-based command line basics**
+- [Terminal and Package Manager Setup](01-terminal-setup.md)
+- **UNIX-based Command Line Basics**
     - [Introduction](#introduction)
     - [Part 1: Command-Feedback Cycles](#part1)
     - [Part 2: Navigating the File Structure](#part2)
-- [Python environment setup](03-python-setup.md)
+- [Python Environment Setup](03-python-setup.md)
 - [Python web server](04-python-web-server.md)
 
 <a name="introduction"></a>

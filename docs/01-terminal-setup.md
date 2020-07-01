@@ -1,12 +1,12 @@
-# Terminal and package manager setup
+# Terminal and Package Manager Setup
 
 ## Navigation
 
-- **Terminal and package manager setup**
+- **Terminal and Package Manager Setup**
     - [macOS](#macos)
     - Windows  
-- [UNIX-based command line basics](02-unix-basics.md)
-- [Python environment setup](03-python-setup.md)
+- [UNIX-based Command Line Basics](02-unix-basics.md)
+- [Python Environment Setup](03-python-setup.md)
 - [Python web server](04-python-web-server.md)
 
 <a name="macos"></a>
