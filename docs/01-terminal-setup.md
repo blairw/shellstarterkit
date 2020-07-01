@@ -2,11 +2,12 @@
 
 ## Navigation
 
-1. **[Terminal and package manager setup](01-terminal-setup.md)**
-    1. [macOS](#macos)
-    2. Windows  
-2. _[Python environment setup](02-python-setup.md)_
-3. _[Python web server](03-python-web-server.md)_
+- **Terminal and package manager setup**
+    - [macOS](#macos)
+    - Windows  
+- [UNIX-based command line basics](02-unix-basics.md)
+- [Python environment setup](03-python-setup.md)
+- [Python web server](04-python-web-server.md)
 
 <a name="macos"></a>
 ## macOS

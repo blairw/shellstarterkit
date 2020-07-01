@@ -2,12 +2,13 @@
 
 ## Navigation
 
-1. [Terminal and package manager setup](01-terminal-setup.md)
-2. **[Python environment setup](02-python-setup.md)**
+- [Terminal and package manager setup](01-terminal-setup.md)
+- **UNIX-based command line basics**
     - [Introduction](#introduction)
     - [Part 1: Command-Feedback Cycles](#part1)
     - [Part 2: Navigating the File Structure](#part2)
-3. [Python web server](03-python-web-server.md)
+- [Python environment setup](03-python-setup.md)
+- [Python web server](04-python-web-server.md)
 
 <a name="introduction"></a>
 ## Introduction
