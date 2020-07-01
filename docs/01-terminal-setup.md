@@ -2,11 +2,11 @@
 
 ## Navigation
 
-1. **[Terminal and package manager setup](docs/01-terminal-setup.md)**
+1. **[Terminal and package manager setup](01-terminal-setup.md)**
     1. [macOS](#macos)
     2. Windows  
-2. _[Python environment setup](docs/02-python-setup.md)_
-3. _[Python web server](docs/03-python-web-server.md)_
+2. _[Python environment setup](02-python-setup.md)_
+3. _[Python web server](03-python-web-server.md)_
 
 <a name="macos"></a>
 ## macOS
@@ -50,3 +50,14 @@ code ~/.zshrc
 ```
 
 And then set `ZSH_THEME="amuse"` in the file that opens in VSCodium at this stage.
+
+## Windows
+
+
+Windows does not come with a UNIX-compatible command line by default (it does have `cmd` and `powershell`, but these are based off the old MS-DOS system and are not UNIX-compatible). However, if you are running the latest version of Windows 10, you can install the Windows Subsystem for Linux (WSL).
+
+Please refer to the WSL installation instructions at: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+Note that those instructions are quite technical. Perhaps you would prefer a video instead: ["How to Install & Enable WSL in Windows 10 (+ how to access files) by Percy Grunwald"](https://www.youtube.com/watch?v=5RTSlby-l9w)
+
+TODO: Windows instructions - WSL, Ubuntu, set up symlinks
