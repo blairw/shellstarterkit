@@ -54,11 +54,14 @@ And then set `ZSH_THEME="amuse"` in the file that opens in VSCodium at this stag
 
 ## Windows
 
+### Install Ubuntu on WSL
 
-Windows does not come with a UNIX-compatible command line by default (it does have `cmd` and `powershell`, but these are based off the old MS-DOS system and are not UNIX-compatible). However, if you are running the latest version of Windows 10, you can install the Windows Subsystem for Linux (WSL).
+Windows does not come with a UNIX-compatible command line by default (it does have `cmd` and `powershell`, but these are DOS-based, not UNIX-based). However, if you are running the latest version of Windows 10, you can install the Windows Subsystem for Linux (WSL).
 
 Please refer to the WSL installation instructions at: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 Note that those instructions are quite technical. Perhaps you would prefer a video instead: ["How to Install & Enable WSL in Windows 10 (+ how to access files) by Percy Grunwald"](https://www.youtube.com/watch?v=5RTSlby-l9w)
 
-TODO: Windows instructions - WSL, Ubuntu, set up symlinks
+Once you have WSL installed, please installed **Ubuntu 18.04 LTS**. Please do **not** use Ubuntu 20.04 LTS as this has not been thoroughly tested on Windows 10 WSL for older computers.
+
+### Install Chocolatey
