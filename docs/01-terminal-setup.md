@@ -73,7 +73,7 @@ At the end of the file, add:
 ```
 
 
-## Windows
+## Windows (using Ubuntu via WSL)
 
 ### Install Ubuntu on WSL
 
@@ -85,4 +85,15 @@ Note that those instructions are quite technical. Perhaps you would prefer a vid
 
 Once you have WSL installed, please installed **Ubuntu 18.04 LTS**. Please do **not** use Ubuntu 20.04 LTS as this has not been thoroughly tested on Windows 10 WSL for older computers.
 
+
+
 ### Install Chocolatey
+
+
+### Ubuntu - allow Git to save credentials
+
+```bash
+git config --global credential.helper store
+```
+
+Warning: This stores credentials in a plaintext file on your computer. If you are concerned, you should turn on BitLocker. See https://support.microsoft.com/en-au/help/4028713/windows-10-turn-on-device-encryption
