@@ -51,6 +51,7 @@ Once installed, get the Powerlevel10k theme:
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 brew cask install font-blexmono-nerd-font
+curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/dot-p10k.zsh -o ~/.p10k.zsh
 ```
 
 Now edit the zshrc file:
@@ -59,7 +60,18 @@ Now edit the zshrc file:
 code ~/.zshrc
 ```
 
-And then set `ZSH_THEME="powerlevel10k/powerlevel10k"` in the file that opens in VSCodium at this stage.
+In the file that opens, find the line starting with `ZSH_THEME` and set it to:
+
+```bash
+ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+At the end of the file, add:
+
+```bash
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+```
+
 
 ## Windows
 
