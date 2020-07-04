@@ -60,8 +60,12 @@ brew cask install iterm2
 
 Once installed, open iTerm and set the following preferences:
 
-- iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Text &rarr; Font &rarr; **LiterationMono Nerd Font Mono**.
+- iTerm2 &rarr; Preferences &rarr; Appearance &rarr; General &rarr; Theme &rarr; **Dark**.
+
+- iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Text &rarr; Font &rarr; **LiterationMono Nerd Font Mono**. (And set the font size to 16, unless you prefer tiny text!)
+
 - iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Text &rarr; Use thin strokes for anti-aliased text &rarr; **Never**.
+
 - iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Keys &rarr; Presets ... &rarr; **&check; Natural Text Editing**.
 
 From now on, please use iTerm2 instead of the Mac Terminal.
@@ -118,6 +122,12 @@ In the file that opens, find the line starting with `ZSH_THEME` and set it to:
 
 ```bash
 ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+Find the line starting with `plugins=` and set it to:
+
+```bash
+plugins=(git virtualenv)
 ```
 
 At the end of the file, add:
