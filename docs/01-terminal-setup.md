@@ -36,7 +36,7 @@ Assuming you've installed Homebrew, you can install VSCodium simply by running:
 brew cask install vscodium
 ```
 
-### Switch to zsh
+### Switch to zsh with Powerlevel10k
 
 If you haven't already, make sure you switch to `zsh` - it does everything that `bash` can do, but [has Apple's blessing](https://support.apple.com/en-us/HT208050). To do this:
 
@@ -44,13 +44,21 @@ If you haven't already, make sure you switch to `zsh` - it does everything that 
 chsh -s /bin/zsh
 ```
 
-**Optional:** Since we'll be using `zsh`, you might want to install **oh-my-zsh** to make your Terminal prompt more useful - see https://ohmyz.sh/. I personally like to use the **amuse** theme. If you want to set this theme, you can run:
+Now install **oh-my-zsh** to make your Terminal prompt more useful - see https://ohmyz.sh/. 
+
+Once installed, get the Powerlevel10k theme:
+
+```bash
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+
+Now edit the zshrc file:
 
 ```bash
 code ~/.zshrc
 ```
 
-And then set `ZSH_THEME="amuse"` in the file that opens in VSCodium at this stage.
+And then set `ZSH_THEME="powerlevel10k/powerlevel10k"` in the file that opens in VSCodium at this stage.
 
 ## Windows
 
