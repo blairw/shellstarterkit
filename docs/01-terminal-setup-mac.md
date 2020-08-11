@@ -27,7 +27,7 @@ brew install rclone
 
 VSCodium will make editing lots of files inside a folder a lot easier. This is great for organising projects.
 
-Assuming you've installed Homebrew, you can install VSCodium simply by running:
+Assuming you've installed Homebrew, you can install VSCodium simply by running, at your iTerm terminal:
 
 ```bash
 brew cask install vscodium
@@ -48,9 +48,11 @@ Now install **oh-my-zsh** to make your Terminal prompt more useful - follow the 
 Once oh-my-zsh installed, get the Powerlevel10k theme:
 
 ```bash
+## get powerlevel10k theme
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-brew cask install font-blexmono-nerd-font
-curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/dot-p10k.zsh -o ~/.p10k.zsh
+
+## get configuration
+curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/resources/dot-p10k.zsh -o ~/.p10k.zsh
 ```
 
 Now edit the zshrc file:
@@ -63,6 +65,12 @@ In the file that opens, find the line starting with `ZSH_THEME` and set it to:
 
 ```bash
 ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+Find the line starting with `plugins=` and set it to:
+
+```bash
+plugins=(git virtualenv)
 ```
 
 At the end of the file, add:
