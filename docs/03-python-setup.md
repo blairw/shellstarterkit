@@ -5,7 +5,6 @@
 - [Terminal and Package Manager Setup](01-terminal-setup.md)
 - [UNIX-based Command Line Basics](02-unix-basics.md)
 - **Python Environment Setup**
-- [Python web server](04-python-web-server.md)
 
 ## macOS
 

@@ -8,7 +8,6 @@
     - [Part 1: Command-Feedback Cycles](#part1)
     - [Part 2: Navigating the File Structure](#part2)
 - [Python Environment Setup](03-python-setup.md)
-- [Python web server](04-python-web-server.md)
 
 <a name="introduction"></a>
 ## Introduction

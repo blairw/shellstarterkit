@@ -5,7 +5,6 @@
 - Terminal and Package Manager Setup ([Mac](01-terminal-setup-mac.md), **Windows**)
 - [UNIX-based Command Line Basics](02-unix-basics.md)
 - [Python Environment Setup](03-python-setup.md)
-- [Python web server](04-python-web-server.md)
 
 ## Install WSL
 
