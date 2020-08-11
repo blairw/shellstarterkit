@@ -22,11 +22,11 @@ Once you have Homebrew installed, you can install - for example - rclone:
 brew install rclone
 ```
 
-## Install VSCodium
+## Install Visual Studio Code
 
-VSCodium will make editing lots of files inside a folder a lot easier. This is great for organising projects.
+Visual Studio Code will make editing lots of files inside a folder a lot easier. This is great for organising projects.
 
-Assuming you've installed Homebrew, you can install VSCodium simply by running, at your iTerm terminal:
+Assuming you've installed Homebrew, you can install Visual Studio Code simply by running, at your iTerm terminal:
 
 ```bash
 brew cask install vscodium
@@ -92,26 +92,26 @@ Once installed, open iTerm and set the following preferences:
 
 From now on, please use iTerm2 instead of the Mac Terminal.
 
-### Install VSCodium
+### Install Visual Studio Code
 
-VSCodium will make editing lots of files inside a folder a lot easier. This is great for organising projects.
+Visual Studio Code will make editing lots of files inside a folder a lot easier. This is great for organising projects.
 
-Assuming you've installed Homebrew, you can install VSCodium simply by running, at your iTerm terminal:
+Assuming you've installed Homebrew, you can install Visual Studio Code simply by running, at your iTerm terminal:
 
 ```bash
-brew cask install vscodium
+brew cask install visual-studio-code
 ```
 
-Once VSCodium is installed, set the following preferences:
+Once Visual Studio Code is installed, set the following preferences:
 
-- VSCodium &rarr; Preferences &rarr; Settings &rarr; **Editor: Font Family**.  
+- Visual Studio Code &rarr; Preferences &rarr; Settings &rarr; **Editor: Font Family**.  
 Set this to:
     
     ```
     'LiterationMono Nerd Font Mono', Menlo, monospace
     ```
 
-- VSCodium &rarr; Preferences &rarr; **Color Theme**.  
+- Visual Studio Code &rarr; Preferences &rarr; **Color Theme**.  
 I recommend **Solarized Dark** or **Dark+ (Default)**. I would avoid using the light coloured themes unless you really feel like you need it. (The Powerlevel10k tool we will install later works better in a dark colour theme.)
 
 ### Switch to zsh with Powerlevel10k
