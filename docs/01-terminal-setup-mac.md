@@ -22,39 +22,13 @@ Once you have Homebrew installed, you can install - for example - rclone:
 brew install rclone
 ```
 
-## Install Visual Studio Code
-
-Visual Studio Code will make editing lots of files inside a folder a lot easier. This is great for organising projects.
-
-Assuming you've installed Homebrew, you can install Visual Studio Code simply by running, at your iTerm terminal:
-
-```bash
-brew cask install vscodium
-```
-
-## Switch to zsh
-
-MacOS already comes with a UNIX-based command line via **Terminal.app**, which is fantastic. To launch it, open the macOS Launchpad and search for **Terminal**.
-
-### Install Homebrew
-
-Homebrew is the most common and straightforward way to install additional command line programs on Mac. It can also automate the installation of regular Mac apps that are not offered through the App Store (this includes most programming-focused apps).
-
-To install Homebrew, follow the instructions at: https://brew.sh/. Note that you will need administrator access to your Mac.
-
-Once you have Homebrew installed, you can install - for example - rclone:
-
-```bash
-brew install rclone
-```
-
-### Set up a folder on your computer to store gitrepos
+## Set up a folder on your computer to store gitrepos
 
 - This folder must **not** be in a place where it is managed by a cloud provider (e.g. Dropbox, OneDrive)
 - I recommend something like `~/00blair/gitrepos` (Mac), i.e. make `00blair` (but with your name) in your home folder, then in that folder, make a folder called `gitrepos`.
 - In Finder, you can quickly go to your home folder by opening a Finder window and then Command + SHIFT + G, then type `~` as the folder to go to.
 
-### Clone this repository
+## Clone this repository
 
 ```bash
 # whatever you had from the previous step
@@ -64,7 +38,7 @@ cd ~/00blair/gitrepos
 git clone -v https://github.com/blairw/shellstarterkit
 ```
 
-### Install Powerline font
+## Install Powerline font
 
 In your copy of this repository, go to the `resources` folder, then `Literation Mono NF`, then `Mac` and select all the fonts (Command + A).
 
@@ -72,7 +46,7 @@ Then install the fonts.
 
 If you get a warning that the fonts may have problems, just click **&check; Select All Fonts** and then click **Install Ticked**.
 
-### Install iTerm2
+## Install iTerm2
 
 This is a better terminal.
 
@@ -92,7 +66,7 @@ Once installed, open iTerm and set the following preferences:
 
 From now on, please use iTerm2 instead of the Mac Terminal.
 
-### Install Visual Studio Code
+## Install Visual Studio Code
 
 Visual Studio Code will make editing lots of files inside a folder a lot easier. This is great for organising projects.
 
@@ -114,7 +88,7 @@ Set this to:
 - Visual Studio Code &rarr; Preferences &rarr; **Color Theme**.  
 I recommend **Solarized Dark** or **Dark+ (Default)**. I would avoid using the light coloured themes unless you really feel like you need it. (The Powerlevel10k tool we will install later works better in a dark colour theme.)
 
-### Switch to zsh with Powerlevel10k
+## Switch to zsh with Powerlevel10k
 
 If you haven't already, make sure you switch to `zsh` - it does everything that `bash` can do, but [has Apple's blessing](https://support.apple.com/en-us/HT208050). To do this:
 
