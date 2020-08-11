@@ -2,19 +2,16 @@
 
 ## Navigation
 
-- **Terminal and Package Manager Setup**
-    - [macOS](#macos)
-    - Windows  
+- Terminal and Package Manager Setup (**Mac**, [Windows](01-terminal-setup-win.md))
 - [UNIX-based Command Line Basics](02-unix-basics.md)
 - [Python Environment Setup](03-python-setup.md)
 - [Python web server](04-python-web-server.md)
 
-<a name="macos"></a>
-## macOS
+## Start with Terminal
 
 MacOS already comes with a UNIX-based command line via **Terminal.app**, which is fantastic. To launch it, open the macOS Launchpad and search for **Terminal**.
 
-### Install Homebrew
+## Install Homebrew
 
 Homebrew is the most common and straightforward way to install additional command line programs on Mac. It can also automate the installation of regular Mac apps that are not offered through the App Store (this includes most programming-focused apps).
 
@@ -26,7 +23,7 @@ Once you have Homebrew installed, you can install - for example - rclone:
 brew install rclone
 ```
 
-### Install VSCodium
+## Install VSCodium
 
 VSCodium will make editing lots of files inside a folder a lot easier. This is great for organising projects.
 
@@ -36,7 +33,7 @@ Assuming you've installed Homebrew, you can install VSCodium simply by running:
 brew cask install vscodium
 ```
 
-### Switch to zsh with Powerlevel10k
+## Switch to zsh
 
 If you haven't already, make sure you switch to `zsh` - it does everything that `bash` can do, but [has Apple's blessing](https://support.apple.com/en-us/HT208050). To do this:
 
@@ -44,9 +41,11 @@ If you haven't already, make sure you switch to `zsh` - it does everything that 
 chsh -s /bin/zsh
 ```
 
-Now install **oh-my-zsh** to make your Terminal prompt more useful - see https://ohmyz.sh/. 
+## oh-my-zsh with Powerlevel10k
 
-Once installed, get the Powerlevel10k theme:
+Now install **oh-my-zsh** to make your Terminal prompt more useful - follow the instructions at https://ohmyz.sh/. 
+
+Once oh-my-zsh installed, get the Powerlevel10k theme:
 
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
@@ -71,29 +70,3 @@ At the end of the file, add:
 ```bash
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 ```
-
-
-## Windows (using Ubuntu via WSL)
-
-### Install Ubuntu on WSL
-
-Windows does not come with a UNIX-compatible command line by default (it does have `cmd` and `powershell`, but these are DOS-based, not UNIX-based). However, if you are running the latest version of Windows 10, you can install the Windows Subsystem for Linux (WSL).
-
-Please refer to the WSL installation instructions at: https://docs.microsoft.com/en-us/windows/wsl/install-win10
-
-Note that those instructions are quite technical. Perhaps you would prefer a video instead: ["How to Install & Enable WSL in Windows 10 (+ how to access files) by Percy Grunwald"](https://www.youtube.com/watch?v=5RTSlby-l9w)
-
-Once you have WSL installed, please installed **Ubuntu 18.04 LTS**. Please do **not** use Ubuntu 20.04 LTS as this has not been thoroughly tested on Windows 10 WSL for older computers.
-
-
-
-### Install Chocolatey
-
-
-### Ubuntu - allow Git to save credentials
-
-```bash
-git config --global credential.helper store
-```
-
-Warning: This stores credentials in a plaintext file on your computer. If you are concerned, you should turn on BitLocker. See https://support.microsoft.com/en-au/help/4028713/windows-10-turn-on-device-encryption

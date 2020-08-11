@@ -2,7 +2,7 @@
 
 ## Navigation
 
-- [Terminal and Package Manager Setup](01-terminal-setup.md)
+- Terminal and Package Manager Setup ([Mac](01-terminal-setup-mac.md), [Windows](01-terminal-setup-win.md))
 - **UNIX-based Command Line Basics**
     - [Introduction](#introduction)
     - [Part 1: Command-Feedback Cycles](#part1)

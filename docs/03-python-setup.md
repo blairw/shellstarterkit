@@ -25,6 +25,21 @@
 
 ## Windows (via WSL)
 
-TODO: Windows instructions.
+Microsoft has kindly documented the full process at: https://docs.microsoft.com/en-us/windows/python/web-frameworks
 
-https://docs.microsoft.com/en-us/windows/python/web-frameworks
+Please complete the following sections of that documentation:
+
+✅ Set up your development environment  
+✅ Install Windows Subsystem for Linux **(NOTE: we [covered this already](01-terminal-setup-win.md))**  
+✅ Set up Visual Studio Code  
+✅ Create a new project  
+✅ Install Python, pip, and venv  
+✅ Create a virtual environment  
+✅ Open a WSL - Remote window  
+✅ Install the Microsoft Python extension  
+✅ Run a simple Python program  
+
+At this stage you do **not** need to complete the following sections of that documentation:
+
+🚫 Hello World tutorial for Flask  
+🚫 Hello World tutorial for Django
