@@ -25,7 +25,7 @@ brew install rclone
 ## Set up a folder on your computer to store gitrepos
 
 - This folder must **not** be in a place where it is managed by a cloud provider (e.g. Dropbox, OneDrive)
-- I recommend something like `~/00blair/gitrepos` (Mac), i.e. make `00blair` (but with your name) in your home folder, then in that folder, make a folder called `gitrepos`.
+- I recommend something like `~/00blair/gitrepos`, i.e. make `00blair` (but with your name) in your home folder, then in that folder, make a folder called `gitrepos`.
 - In Finder, you can quickly go to your home folder by opening a Finder window and then Command + SHIFT + G, then type `~` as the folder to go to.
 
 ## Clone this repository

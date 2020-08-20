@@ -17,15 +17,37 @@ Please refer to the WSL installation instructions at: https://docs.microsoft.com
 
 Once you have WSL installed, please installed **Ubuntu 18.04 LTS**. Please do **not** use Ubuntu 20.04 LTS as this only works properly on WSL 2.
 
-## Switch to zsh
+## Set up a folder on your computer to store gitrepos
 
-If you haven't already, make sure you switch to `zsh`. To do this:
+- This folder must **not** be in a place where it is managed by a cloud provider (e.g. Dropbox, OneDrive)
+- I recommend something like `C:\00blair\gitrepos`, i.e. make `00blair` (but with your name), then in that folder, make a folder called `gitrepos`.
+- In WSL you can access it too, for example, `/mnt/c/00blair/gitrepos`.
+
+## Clone this repository
+
+```bash
+# whatever you had from the previous step
+cd /mnt/c/00blair/gitrepos
+
+# clone the repository
+git clone -v https://github.com/blairw/shellstarterkit
+```
+
+## Install Powerline font
+
+In your copy of this repository, go to the `resources` folder, then `Literation Mono NF`, then `Mac` and select all the fonts (Command + A).
+
+Then install the fonts.
+
+If you get a warning that the fonts may have problems, just click **&check; Select All Fonts** and then click **Install Ticked**.
+
+## Switch to oh-my-zsh with Powerlevel10k
+
+Make sure you switch to `zsh`. To do this:
 
 ```bash
 chsh -s /bin/zsh
 ```
-
-## oh-my-zsh with Powerlevel10k
 
 Now install **oh-my-zsh** to make your Terminal prompt more useful - follow the instructions at https://ohmyz.sh/. 
 
@@ -58,7 +80,7 @@ At the end of the file, add:
 
 ## Allow Git to save credentials
 
-Once WSL 1, Ubuntu 18.04 LTS and Windows Terminal are installed, open Ubuntu using Windows Terminal and run:
+Open Ubuntu using Windows Terminal and run:
 
 ```bash
 git config --global credential.helper store
