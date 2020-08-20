@@ -35,11 +35,28 @@ git clone -v https://github.com/blairw/shellstarterkit
 
 ## Install Powerline font
 
-In your copy of this repository, go to the `resources` folder, then `Literation Mono NF`, then `Mac` and select all the fonts (Command + A).
+In your copy of this repository, go to the `resources` folder, then `Literation Mono NF`, then `Windows` and select all the fonts (Ctrl + A).
 
 Then install the fonts.
 
-If you get a warning that the fonts may have problems, just click **&check; Select All Fonts** and then click **Install Ticked**.
+
+## Install Visual Studio Code
+
+Visual Studio Code will make editing lots of files inside a folder a lot easier. This is great for organising projects.
+
+In WSL, you can install Visual Studio Code just by running the command `code`. This will install Visual Studio Code the first time it is run.
+
+Once Visual Studio Code is installed, set the following preferences:
+
+- Visual Studio Code &rarr; Preferences &rarr; Settings &rarr; **Editor: Font Family**.  
+Set this to:
+    
+    ```
+    'LiterationMono Nerd Font Mono', Menlo, monospace
+    ```
+
+- Visual Studio Code &rarr; Preferences &rarr; **Color Theme**.  
+I recommend **Solarized Dark** or **Dark+ (Default)**. I would avoid using the light coloured themes unless you really feel like you need it. (The Powerlevel10k tool we will install later works better in a dark colour theme.)
 
 ## Switch to oh-my-zsh with Powerlevel10k
 
