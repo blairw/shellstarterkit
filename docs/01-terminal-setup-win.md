@@ -23,22 +23,6 @@ Once you have WSL installed, please installed **Ubuntu 18.04 LTS**. Please do **
 - I recommend something like `C:\00blair\gitrepos`, i.e. make `00blair` (but with your name), then in that folder, make a folder called `gitrepos`.
 - In WSL you can access it too, for example, `/mnt/c/00blair/gitrepos`.
 
-## Clone this repository
-
-```bash
-# whatever you had from the previous step
-cd /mnt/c/00blair/gitrepos
-
-# clone the repository
-git clone -v https://github.com/blairw/shellstarterkit
-```
-
-## Install Powerline font
-
-In your copy of this repository, go to the `resources` folder, then `Literation Mono NF`, then `Windows` and select all the fonts (Ctrl + A).
-
-Then install the fonts.
-
 
 ## Install Visual Studio Code
 
@@ -46,23 +30,12 @@ Visual Studio Code will make editing lots of files inside a folder a lot easier.
 
 In WSL, you can install Visual Studio Code just by running the command `code`. This will install Visual Studio Code the first time it is run.
 
-Once Visual Studio Code is installed, set the following preferences:
-
-- Visual Studio Code &rarr; Preferences &rarr; Settings &rarr; **Editor: Font Family**.  
-Set this to:
-    
-    ```
-    'LiterationMono Nerd Font Mono', Menlo, monospace
-    ```
-
-- Visual Studio Code &rarr; Preferences &rarr; **Color Theme**.  
-I recommend **Solarized Dark** or **Dark+ (Default)**. I would avoid using the light coloured themes unless you really feel like you need it. (The Powerlevel10k tool we will install later works better in a dark colour theme.)
-
 ## Switch to oh-my-zsh with Powerlevel10k
 
 Make sure you switch to `zsh`. To do this:
 
 ```bash
+sudo apt-get install zsh
 chsh -s /bin/zsh
 ```
 
