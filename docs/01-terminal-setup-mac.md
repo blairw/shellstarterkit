@@ -63,7 +63,7 @@ Once Visual Studio Code is installed, set the following preferences:
 Set this to:
     
     ```
-    'LiterationMono Nerd Font Mono', Menlo, monospace
+    'Cascadia Code PL', Menlo, monospace
     ```
 
 - Visual Studio Code &rarr; Preferences &rarr; **Color Theme**.  
