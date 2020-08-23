@@ -22,29 +22,10 @@ Once you have Homebrew installed, you can install - for example - rclone:
 brew install rclone
 ```
 
-## Set up a folder on your computer to store gitrepos
+## Install the Cascadia font
 
-- This folder must **not** be in a place where it is managed by a cloud provider (e.g. Dropbox, OneDrive)
-- I recommend something like `~/00blair/gitrepos`, i.e. make `00blair` (but with your name) in your home folder, then in that folder, make a folder called `gitrepos`.
-- In Finder, you can quickly go to your home folder by opening a Finder window and then Command + SHIFT + G, then type `~` as the folder to go to.
+This is a special "coding" font made by Microsoft that works well with Powerlevel10k. Go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
 
-## Clone this repository
-
-```bash
-# whatever you had from the previous step
-cd ~/00blair/gitrepos
-
-# clone the repository
-git clone -v https://github.com/blairw/shellstarterkit
-```
-
-## Install Powerline font
-
-In your copy of this repository, go to the `resources` folder, then `Literation Mono NF`, then `Mac` and select all the fonts (Command + A).
-
-Then install the fonts.
-
-If you get a warning that the fonts may have problems, just click **&check; Select All Fonts** and then click **Install Ticked**.
 
 ## Install iTerm2
 
