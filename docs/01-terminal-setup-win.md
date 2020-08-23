@@ -38,7 +38,6 @@ Once oh-my-zsh installed, get the Powerlevel10k theme:
 
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-brew cask install font-blexmono-nerd-font
 curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/dot-p10k.zsh -o ~/.p10k.zsh
 ```
 
