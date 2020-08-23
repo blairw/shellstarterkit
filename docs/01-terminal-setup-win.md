@@ -23,6 +23,22 @@ Visual Studio Code will make editing lots of files inside a folder a lot easier.
 
 In WSL, you can install Visual Studio Code just by running the command `code`. This will install Visual Studio Code the first time it is run.
 
+## Install Casacadia font
+
+This is a special font made by Microsoft for use with Powerline and Powerlevel10k. Go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
+
+Once the fonts are installed, use Windows Terminal to set the font for Ubuntu:
+
+```json
+{
+    "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "hidden": false,
+    "name": "Ubuntu-18.04",
+    "fontFace": "Cascadia Code PL",
+    "source": "Windows.Terminal.Wsl"
+},
+```
+
 ## Switch to oh-my-zsh with Powerlevel10k
 
 Make sure you switch to `zsh`. To do this:
@@ -38,7 +54,7 @@ Once oh-my-zsh installed, get the Powerlevel10k theme:
 
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/dot-p10k.zsh -o ~/.p10k.zsh
+curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/dot-p10k-windows.zsh -o ~/.p10k.zsh
 ```
 
 Now edit the zshrc file:
@@ -51,6 +67,22 @@ In the file that opens, find the line starting with `ZSH_THEME` and set it to:
 
 ```bash
 ZSH_THEME="powerlevel10k/powerlevel10k"
+```
+
+Find the line starting with `plugins=` and set it to:
+
+```bash
+plugins=(git virtualenv)
+```
+
+At the top of the file, add:
+```bash
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 ```
 
 At the end of the file, add:
