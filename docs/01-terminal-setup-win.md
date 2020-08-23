@@ -23,7 +23,7 @@ Visual Studio Code will make editing lots of files inside a folder a lot easier.
 
 In WSL, you can install Visual Studio Code just by running the command `code`. This will install Visual Studio Code the first time it is run.
 
-## Install Casacadia font
+## Install Cascadia font
 
 This is a special font made by Microsoft for use with Powerline and Powerlevel10k. Go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
 
