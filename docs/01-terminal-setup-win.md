@@ -54,7 +54,6 @@ Once oh-my-zsh installed, get the Powerlevel10k theme:
 
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/dot-p10k-wsl.zsh -o ~/.p10k.zsh
 ```
 
 Now edit the zshrc file:
@@ -75,22 +74,7 @@ Find the line starting with `plugins=` and set it to:
 plugins=(git virtualenv)
 ```
 
-At the top of the file, add:
-```bash
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-```
-
-At the end of the file, add:
-
-```bash
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-```
-
+Then re-open Windows Terminal and follow the instructions.
 
 ## Allow Git to save credentials
 
