@@ -39,7 +39,7 @@ Once installed, open iTerm and set the following preferences:
 
 - iTerm2 &rarr; Preferences &rarr; Appearance &rarr; General &rarr; Theme &rarr; **Dark**.
 
-- iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Text &rarr; Font &rarr; **LiterationMono Nerd Font Mono**. (And set the font size to 16, unless you prefer tiny text!)
+- iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Text &rarr; Font &rarr; **Cascadia Code PL**. (And set the font size to 16, unless you prefer tiny text!)
 
 - iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Text &rarr; Use thin strokes for anti-aliased text &rarr; **Never**.
 
