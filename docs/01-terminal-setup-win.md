@@ -25,7 +25,7 @@ In WSL, you can install Visual Studio Code just by running the command `code`. T
 
 ## Install Cascadia font
 
-This is a special font made by Microsoft for use with Powerline and Powerlevel10k. Go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
+This is a special "coding" font made by Microsoft that works well with Powerlevel10k. Go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
 
 Once the fonts are installed, use Windows Terminal to set the font for Ubuntu:
 
