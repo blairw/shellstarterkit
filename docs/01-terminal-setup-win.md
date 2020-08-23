@@ -54,7 +54,7 @@ Once oh-my-zsh installed, get the Powerlevel10k theme:
 
 ```bash
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/dot-p10k-windows.zsh -o ~/.p10k.zsh
+curl https://raw.githubusercontent.com/blairw/shellstarterkit/master/dot-p10k-wsl.zsh -o ~/.p10k.zsh
 ```
 
 Now edit the zshrc file:
