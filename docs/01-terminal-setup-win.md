@@ -13,7 +13,7 @@ Windows does not come with a UNIX-compatible command line by default (it does ha
 Please refer to the WSL installation instructions at: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 - ⚠️ Please make sure that you follow the instructions for WSL 1, not WSL 2 (this has not been thoroughly tested on Windows 10 for older computers).
-- 👍 It is recommended that you also install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701).
+- 👍 It is recommended that you also install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) and configure it to use WSL by default.
 
 Once you have WSL installed, please installed **Ubuntu 18.04 LTS**. Please do **not** use Ubuntu 20.04 LTS as this only works properly on WSL 2.
 
