@@ -17,13 +17,6 @@ Please refer to the WSL installation instructions at: https://docs.microsoft.com
 
 Once you have WSL installed, please installed **Ubuntu 18.04 LTS**. Please do **not** use Ubuntu 20.04 LTS as this only works properly on WSL 2.
 
-## Set up a folder on your computer to store gitrepos
-
-- This folder must **not** be in a place where it is managed by a cloud provider (e.g. Dropbox, OneDrive)
-- I recommend something like `C:\00blair\gitrepos`, i.e. make `00blair` (but with your name), then in that folder, make a folder called `gitrepos`.
-- In WSL you can access it too, for example, `/mnt/c/00blair/gitrepos`.
-
-
 ## Install Visual Studio Code
 
 Visual Studio Code will make editing lots of files inside a folder a lot easier. This is great for organising projects.
