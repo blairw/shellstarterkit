@@ -9,3 +9,4 @@ Walkthrough videos:
 
 - For Mac: https://www.youtube.com/watch?v=yW-1HbSlLTc
 - For Windows: https://www.youtube.com/watch?v=NlbHa49IiGc
+  - ⚠️ Please ensure you install Visual Studio Code from Microsoft before using these instructions: https://code.visualstudio.com/
