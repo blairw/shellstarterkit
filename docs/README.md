@@ -8,5 +8,6 @@ Starter kit for Unix terminal, Python, etc.
 Walkthrough videos:
 
 - For Mac: https://www.youtube.com/watch?v=yW-1HbSlLTc
+  - ✅ Good news - the Mac version includes the installation of Visual Studio Code.
 - For Windows: https://www.youtube.com/watch?v=NlbHa49IiGc
   - ⚠️ Please ensure you install Visual Studio Code from Microsoft before using these instructions: https://code.visualstudio.com/
