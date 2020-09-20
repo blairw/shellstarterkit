@@ -34,7 +34,7 @@ Once the fonts are installed, use Windows Terminal to set the font for Ubuntu:
     "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
     "hidden": false,
     "name": "Ubuntu-18.04",
-    "fontFace": "'Cascadia Code', 'Cascadia Code PL'",
+    "fontFace": "Cascadia Code",
     "source": "Windows.Terminal.Wsl"
 },
 ```
