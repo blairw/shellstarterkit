@@ -24,7 +24,13 @@ brew install rclone
 
 ## Install the Cascadia font
 
-This is a special "coding" font made by Microsoft that works well with Powerlevel10k. Go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
+This is a special "coding" font made by Microsoft that works well with Powerlevel10k.
+
+```bash
+brew install homebrew/cask-fonts/font-cascadia-code-pl
+```
+
+**Fallback option:** If and only if the brew method is not working, go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
 
 
 ## Install iTerm2
