@@ -49,7 +49,7 @@ Once installed, open iTerm and set the following preferences:
 
 - iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Text &rarr; Use thin strokes for anti-aliased text &rarr; **Never**.
 
-- iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Keys &rarr; Presets ... &rarr; **&check; Natural Text Editing**.
+- iTerm2 &rarr; Preferences &rarr; Profiles &rarr; Keys &rarr; Presets ... &rarr; **&check; Natural Text Editing**. (If asked about "Remove all key mappings before loading preset?", select **Remove**)
 
 From now on, please use iTerm2 instead of the Mac Terminal.
 
