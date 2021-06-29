@@ -32,7 +32,7 @@ This is a special "coding" font made by Microsoft that works well with Powerleve
 This is a better terminal.
 
 ```bash
-brew cask install iterm2
+brew install --cask iterm2
 ```
 
 Once installed, open iTerm and set the following preferences:
