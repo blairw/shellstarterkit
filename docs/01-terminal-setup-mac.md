@@ -54,7 +54,7 @@ Visual Studio Code will make editing lots of files inside a folder a lot easier.
 Assuming you've installed Homebrew, you can install Visual Studio Code simply by running, at your iTerm terminal:
 
 ```bash
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 Once Visual Studio Code is installed, set the following preferences:
