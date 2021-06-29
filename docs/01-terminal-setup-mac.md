@@ -65,14 +65,14 @@ brew install --cask visual-studio-code
 
 Once Visual Studio Code is installed, set the following preferences:
 
-- Visual Studio Code &rarr; Preferences &rarr; Settings &rarr; **Editor: Font Family**.  
+- macOS menu bar &rarr; Code &rarr; Preferences &rarr; Settings &rarr; **Editor: Font Family**.  
 Set this to:
     
     ```
     'Cascadia Code PL', Menlo, monospace
     ```
 
-- Visual Studio Code &rarr; Preferences &rarr; **Color Theme**.  
+- macOS menu bar &rarr; Code &rarr; Preferences &rarr; **Color Theme**.  
 I recommend **Solarized Dark** or **Dark+ (Default)**. I would avoid using the light coloured themes unless you really feel like you need it. (The Powerlevel10k tool we will install later works better in a dark colour theme.)
 
 ## Switch to zsh with Powerlevel10k
