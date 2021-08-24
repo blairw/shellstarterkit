@@ -12,3 +12,6 @@ Walkthrough videos:
   - ✅ Good news - the Mac version includes the installation of Visual Studio Code.
 - For Windows: https://www.youtube.com/watch?v=NlbHa49IiGc
   - ⚠️ Please ensure you install Visual Studio Code from Microsoft before using these instructions: https://code.visualstudio.com/
+
+
+_Image source: GNOME Project, licensed under Creative Commons CC-BY-SA_
