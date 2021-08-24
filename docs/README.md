@@ -1,4 +1,5 @@
-![shellstarterkit](docs/shellstarterkit.png)
+![shellstarterkit](shellstarterkit.png)
+
 Starter kit for Unix terminal, Python, etc.
 
 - Terminal and package manager setup ([Mac](01-terminal-setup-mac.md), [Windows](01-terminal-setup-win.md))
