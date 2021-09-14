@@ -17,6 +17,7 @@
 2. Modify the PATH:
 
     ```bash
+    echo >> ~/.zshrc
     echo 'alias python="/usr/local/opt/python@3.7/bin/python3.7"' >> ~/.zshrc
     echo 'alias python3="/usr/local/opt/python@3.7/bin/python3.7"' >> ~/.zshrc
     ```
