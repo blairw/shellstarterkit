@@ -21,7 +21,7 @@
     echo 'alias python3="/usr/local/opt/python@3.7/bin/python3.7"' >> ~/.zshrc
     ```
 
-3. Quit Terminal (Command+Q) and re-open it. `python` should now be the latest Python 3.
+3. Quit Terminal (Command+Q) and re-open it. `python` should now be the latest Python 3.7.
 
 ## Windows (via WSL)
 
