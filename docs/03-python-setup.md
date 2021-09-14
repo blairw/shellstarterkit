@@ -44,15 +44,19 @@ At this stage you do **not** need to complete the following sections of that doc
 🚫 Hello World tutorial for Flask  
 🚫 Hello World tutorial for Django
 
-## OPTIONAL: Set Python version to Python 3.7
+### OPTIONAL: Set Python version to Python 3.7
 
 If you would like to this, please first follow these instructions: https://linoxide.com/install-python-3-7-on-ubuntu-18-04-lts/
 
-Then install venv: `sudo apt-get install -y python3.7-venv`.
+Then install venv:
+
+```bash
+sudo apt-get install -y python3.7-venv
+```
 
 Then you can set `python` and `python3` to use Python 3.7 like so:
 
-``
+```bash
 echo 'alias python="/usr/bin/python3.7"' >> ~/.zshrc
 echo 'alias python3="/usr/bin/python3.7"' >> ~/.zshrc
-``
+```
