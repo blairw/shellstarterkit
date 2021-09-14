@@ -15,13 +15,35 @@ Please refer to the WSL installation instructions at: https://docs.microsoft.com
 - ⚠️ Please make sure that you follow the instructions for WSL 1, not WSL 2 (this has not been thoroughly tested on Windows 10 for older computers).
 - 👍 It is recommended that you also install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) and configure it to use WSL by default.
 
-Once you have WSL installed, please installed **Ubuntu 18.04 LTS**. Please do **not** use Ubuntu 20.04 LTS as this only works properly on WSL 2.
+## Install Ubuntu 18.04 LTS
+
+- Once you have WSL installed, please install **Ubuntu 18.04 LTS** from the Windows Store. Please do **not** use Ubuntu 20.04 LTS as this only works properly on WSL 2.
+
+- Once you have installed Ubuntu 18.04 LTS, please launch it from the start menu. It will invite you to configure it, including the set up of a username and password for Ubuntu. This does not need to be the same as your Windows username and password &mdash; just make sure you can remember what you do set it to!
+
+## Set up Ubuntu to use the AARnet server
+
+**Note: This step should only be run if you are physically located in Australia.** (AARnet is the official internet service provider for Australian universities, and their server is very fast - certainly for those of us located in Australia, this is much faster than connecting the default American server.)
+
+Run the following commands:
+
+```
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+sudo sed -i 's|http://archive.ubuntu.com/ubuntu/|http://mirror.aarnet.edu.au/pub/ubuntu/archive/|g' /etc/apt/sources.list
+```
+
+## Update Ubuntu
+    
+- Run `sudo apt-get update && sudo apt-get upgrade` to update all installed Ubuntu software.
+- If prompted for a password, please enter the same password that you set up during the configuration of Ubuntu 18.04 LTS.
 
 ## Install Visual Studio Code
 
 Visual Studio Code will make editing lots of files inside a folder a lot easier. This is great for organising projects.
 
-In WSL, you can install Visual Studio Code just by running the command `code`. This will install Visual Studio Code the first time it is run.
+You can install Visual Studio Code from https://code.visualstudio.com/ or if you are using [Chocolatey](https://chocolatey.org/) you can run `cinst -y vscode` at an administrative `cmd` prompt.
+
+Once Visual Studio Code is installed, you will be able to run the command `code` in Ubuntu.
 
 ## Install Cascadia font
 
@@ -34,7 +56,7 @@ Once the fonts are installed, use Windows Terminal to set the font for Ubuntu:
     "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
     "hidden": false,
     "name": "Ubuntu-18.04",
-    "fontFace": "Cascadia Code",
+    "fontFace": "Cascadia Code PLt",
     "source": "Windows.Terminal.Wsl"
 },
 ```
@@ -48,7 +70,13 @@ sudo apt-get install zsh
 chsh -s /bin/zsh
 ```
 
-Now install **oh-my-zsh** to make your Terminal prompt more useful - follow the instructions at https://ohmyz.sh/. 
+Now install **oh-my-zsh** to make your Terminal prompt more useful:
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+(If asked if you want to switch your default shell to zsh, type <kbd>Y</kbd> for Yes and then hit <kbd>ENTER</kbd>.)
 
 Once oh-my-zsh installed, get the Powerlevel10k theme:
 
@@ -59,7 +87,8 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 Now edit the zshrc file:
 
 ```bash
-code ~/.zshrc
+cd ~
+code .zshrc
 ```
 
 In the file that opens, find the line starting with `ZSH_THEME` and set it to:
