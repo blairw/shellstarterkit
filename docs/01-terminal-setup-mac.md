@@ -83,7 +83,13 @@ If you haven't already, make sure you switch to `zsh` - it does everything that 
 chsh -s /bin/zsh
 ```
 
-Now install **oh-my-zsh** to make your Terminal prompt more useful - see https://ohmyz.sh/. 
+Now install **oh-my-zsh** to make your Terminal prompt more useful:
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+(If asked if you want to switch your default shell to zsh, type <kbd>Y</kbd> for Yes and then hit <kbd>ENTER</kbd>.)
 
 Once installed, get the Powerlevel10k theme:
 
