@@ -11,13 +11,14 @@
 1. Install Python 3 via Homebrew:
 
     ```bash
-    brew install python
+    brew install python@3.7
     ```
 
 2. Modify the PATH:
 
     ```bash
-    echo '\n\nexport PATH="/usr/local/opt/python/libexec/bin:'$(python -m site --user-base)'/bin:$PATH"' >> ~/.zshrc
+    echo 'alias python="/usr/local/opt/python@3.7/bin/python3.7"' >> ~/.zshrc
+    echo 'alias python3="/usr/local/opt/python@3.7/bin/python3.7"' >> ~/.zshrc
     ```
 
 3. Quit Terminal (Command+Q) and re-open it. `python` should now be the latest Python 3.
