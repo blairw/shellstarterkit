@@ -13,7 +13,6 @@ Windows does not come with a UNIX-compatible command line by default (it does ha
 Please refer to the WSL installation instructions at: https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 - ⚠️ Please make sure that you follow the instructions for WSL 1, not WSL 2 (this has not been thoroughly tested on Windows 10 for older computers).
-- 👍 It is recommended that you also install [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701) and configure it to use WSL by default.
 
 ## Install Ubuntu 18.04 LTS
 
@@ -37,6 +36,29 @@ sudo sed -i 's|http://archive.ubuntu.com/ubuntu/|http://mirror.aarnet.edu.au/pub
 - Run `sudo apt-get update && sudo apt-get upgrade` to update all installed Ubuntu software.
 - If prompted for a password, please enter the same password that you set up during the configuration of Ubuntu 18.04 LTS.
 
+## Install Cascadia font
+
+This is a special "coding" font made by Microsoft that works well with Powerlevel10k. Go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
+
+## Install Windows Terminal
+
+Install [Windows Terminal from the Microsoft Store](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701).
+
+Once installed, open it from the start menu. Then use <kbd>Ctrl</kbd> + <kbd>,</kbd> to open the settings. Then:
+
+- Set the **Default Profile** to **Ubuntu-18.04**.
+- Click the **Open JSON file** option in the bottom-left corner and modify the JSON file to include a `fontFace` of "Cascadia Code PL" for the Ubuntu-18.04 profile:
+
+    ```json
+    {
+        "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+        "hidden": false,
+        "name": "Ubuntu-18.04",
+        "fontFace": "Cascadia Code PL",
+        "source": "Windows.Terminal.Wsl"
+    }
+    ```
+
 ## Install Visual Studio Code
 
 Visual Studio Code will make editing lots of files inside a folder a lot easier. This is great for organising projects.
@@ -44,22 +66,6 @@ Visual Studio Code will make editing lots of files inside a folder a lot easier.
 You can install Visual Studio Code from https://code.visualstudio.com/ or if you are using [Chocolatey](https://chocolatey.org/) you can run `cinst -y vscode` at an administrative `cmd` prompt.
 
 Once Visual Studio Code is installed, you will be able to run the command `code` in Ubuntu.
-
-## Install Cascadia font
-
-This is a special "coding" font made by Microsoft that works well with Powerlevel10k. Go to https://github.com/microsoft/cascadia-code/releases and download the latest release, then install the fonts.
-
-Once the fonts are installed, use Windows Terminal to set the font for Ubuntu:
-
-```json
-{
-    "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
-    "hidden": false,
-    "name": "Ubuntu-18.04",
-    "fontFace": "Cascadia Code PL",
-    "source": "Windows.Terminal.Wsl"
-},
-```
 
 ## Switch to oh-my-zsh with Powerlevel10k
 
