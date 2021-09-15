@@ -19,7 +19,7 @@
     ```bash
     mkdir ~/pythons
     ln -s /usr/local/opt/python@3.7/bin/python3 ~/pythons/python
-    ln -s /usr/local/opt/python@3.7/bin/python3 ~/pythons/python3
+    ln -s /usr/local/opt/python@3.7/bin/pip3 ~/pythons/pip
     echo >> ~/.zshrc
     echo 'export PATH="$HOME/pythons:/usr/local/opt/python@3.7/bin:$PATH"' >> ~/.zshrc
     ```
