@@ -14,11 +14,15 @@
     brew install python@3.7
     ```
 
-2. Modify the PATH:
+2. Symlink `python` to point to `python3`, and modify the PATH:
 
     ```bash
+    mkdir ~/pythons
+    ln -s /usr/local/opt/python@3.7/bin/python3 ~/pythons/python
+    ln -s /usr/local/opt/python@3.7/bin/python3 ~/pythons/python3
+    ln -s /usr/local/opt/python@3.7/bin/python3 ~/pythons/python3.7
     echo >> ~/.zshrc
-    echo 'export PATH="/usr/local/opt/python@3.7/bin:$PATH"' >> ~/.zshrc
+    echo 'export PATH="$HOME/pythons:$PATH"' >> ~/.zshrc
     ```
 
 3. Quit Terminal (Command+Q) and re-open it. `python` should now be the latest Python 3.7.
@@ -57,6 +61,10 @@ sudo apt-get install -y python3.7-venv
 Then you can set `python` and `python3` to use Python 3.7 like so:
 
 ```bash
+mkdir ~/pythons
+ln -s /usr/bin/python3.7 ~/pythons/python
+ln -s /usr/bin/python3.7 ~/pythons/python3
+ln -s /usr/bin/python3.7 ~/pythons/python3.7
 echo >> ~/.zshrc
-echo 'export PATH="/usr/local/opt/python@3.7/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$HOME/pythons:$PATH"' >> ~/.zshrc
 ```
