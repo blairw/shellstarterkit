@@ -8,13 +8,13 @@
 
 ## macOS
 
-1. Install Python 3 via Homebrew:
+1. Install Python 3.7 via Homebrew:
 
     ```bash
     brew install python@3.7
     ```
 
-2. Symlink `python` to point to `python3`, and modify the PATH:
+2. Set Python 3.7 to be the default, and modify the PATH:
 
     ```bash
     mkdir ~/pythons
