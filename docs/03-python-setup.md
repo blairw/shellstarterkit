@@ -20,9 +20,8 @@
     mkdir ~/pythons
     ln -s /usr/local/opt/python@3.7/bin/python3 ~/pythons/python
     ln -s /usr/local/opt/python@3.7/bin/python3 ~/pythons/python3
-    ln -s /usr/local/opt/python@3.7/bin/python3 ~/pythons/python3.7
     echo >> ~/.zshrc
-    echo 'export PATH="$HOME/pythons:$PATH"' >> ~/.zshrc
+    echo 'export PATH="$HOME/pythons:/usr/local/opt/python@3.7/bin:$PATH"' >> ~/.zshrc
     ```
 
 3. Quit Terminal (Command+Q) and re-open it. `python` should now be the latest Python 3.7.
@@ -47,24 +46,3 @@ At this stage you do **not** need to complete the following sections of that doc
 
 🚫 Hello World tutorial for Flask  
 🚫 Hello World tutorial for Django
-
-### OPTIONAL: Set Python version to Python 3.7
-
-If you would like to this, please first follow these instructions: https://linoxide.com/install-python-3-7-on-ubuntu-18-04-lts/
-
-Then install venv:
-
-```bash
-sudo apt-get install -y python3.7-venv
-```
-
-Then you can set `python` and `python3` to use Python 3.7 like so:
-
-```bash
-mkdir ~/pythons
-ln -s /usr/bin/python3.7 ~/pythons/python
-ln -s /usr/bin/python3.7 ~/pythons/python3
-ln -s /usr/bin/python3.7 ~/pythons/python3.7
-echo >> ~/.zshrc
-echo 'export PATH="$HOME/pythons:$PATH"' >> ~/.zshrc
-```
