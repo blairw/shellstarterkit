@@ -18,8 +18,7 @@
 
     ```bash
     echo >> ~/.zshrc
-    echo 'alias python="/usr/local/opt/python@3.7/bin/python3.7"' >> ~/.zshrc
-    echo 'alias python3="/usr/local/opt/python@3.7/bin/python3.7"' >> ~/.zshrc
+    echo 'export PATH="/usr/local/opt/python@3.7/bin:$PATH"' >> ~/.zshrc
     ```
 
 3. Quit Terminal (Command+Q) and re-open it. `python` should now be the latest Python 3.7.
@@ -58,6 +57,6 @@ sudo apt-get install -y python3.7-venv
 Then you can set `python` and `python3` to use Python 3.7 like so:
 
 ```bash
-echo 'alias python="/usr/bin/python3.7"' >> ~/.zshrc
-echo 'alias python3="/usr/bin/python3.7"' >> ~/.zshrc
+echo >> ~/.zshrc
+echo 'export PATH="/usr/local/opt/python@3.7/bin:$PATH"' >> ~/.zshrc
 ```
