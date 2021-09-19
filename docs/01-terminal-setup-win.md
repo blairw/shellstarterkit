@@ -47,7 +47,7 @@ Install [Windows Terminal from the Microsoft Store](https://www.microsoft.com/en
 Once installed, open it from the start menu. Then use <kbd>Ctrl</kbd> + <kbd>,</kbd> to open the settings. Then:
 
 - In the **Startup** item in the menu, set the **Default Profile** to **Ubuntu-18.04**.
-- In the **Profiles** section in the menu, click on the **Ubuntu-18.04** item, then click the **Appearance** item and set **Font face** to **Cascadia Code**.
+- In the **Profiles** section in the menu, click on the **Ubuntu-18.04** item, then click the **Appearance** item and set **Font face** to **Cascadia Code PL**.
 
 ## Install Visual Studio Code
 
