@@ -10,7 +10,7 @@
 
 Windows does not come with a UNIX-compatible command line by default (it does have `cmd` and `powershell`, but these are DOS-based, not UNIX-based). However, if you are running the latest version of Windows 10, you can install the Windows Subsystem for Linux (WSL).
 
-Please refer to the WSL installation instructions at: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+Please refer to the WSL installation instructions at: https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
 - ⚠️ Please make sure that you follow the instructions for WSL 1, not WSL 2 (this has not been thoroughly tested on Windows 10 for older computers).
 
