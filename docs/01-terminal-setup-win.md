@@ -12,23 +12,27 @@ Windows does not come with a UNIX-compatible command line by default (it does ha
 
 Please refer to the WSL installation instructions at: https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
-- ⚠️ Please make sure that you follow the instructions for WSL 1, not WSL 2 (this has not been thoroughly tested on Windows 10 for older computers).
-
-## Install Ubuntu 18.04 LTS
-
-- Once you have WSL installed, please install **Ubuntu 18.04 LTS** from the Windows Store. Please do **not** use Ubuntu 20.04 LTS as this only works properly on WSL 2.
-
-- Once you have installed Ubuntu 18.04 LTS, please launch it from the start menu. It will invite you to configure it, including the set up of a username and password for Ubuntu. This does not need to be the same as your Windows username and password &mdash; just make sure you can remember what you do set it to!
+- If prompted, choose Ubuntu LTS.
+- Once you have installed Ubuntu LTS, please launch it from the start menu. It will invite you to configure it, including the set up of a username and password for Ubuntu. This does not need to be the same as your Windows username and password &mdash; just make sure you can remember what you do set it to!
 
 ## Set up Ubuntu to use the AARnet server
 
-**Note: This step should only be run if you are physically located in Australia.** (AARnet is the official internet service provider for Australian universities, and their server is very fast - certainly for those of us located in Australia, this is much faster than connecting the default American server.)
+If you're physically located in **Australia** - use **AARnet**. (AARnet is the internet service provider for Australian universities.)
 
 Run the following commands:
 
 ```
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
 sudo sed -i 's|http://archive.ubuntu.com/ubuntu/|http://mirror.aarnet.edu.au/pub/ubuntu/archive/|g' /etc/apt/sources.list
+```
+
+If you're physically located in **Ireland** - use **HEAnet**. (Irish equivalent of AARnet.)
+
+Run the following commands:
+
+```
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup
+sudo sed -i 's|http://archive.ubuntu.com/ubuntu/|https://ftp.heanet.ie/mirrors/ubuntu/|g' /etc/apt/sources.list
 ```
 
 ## Update Ubuntu
